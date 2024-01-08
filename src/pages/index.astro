@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Inicio from '../components/Inicio.astro';
+import Servicios from '../components/Servicios.astro';
+import Horario from '../components/Horario.astro';
+---
+
+<Layout 
+	title = "Pipas la Queretana"
+	description = "Pipas de la mejor calidad para tu hogar solo en Queretaro"
+>
+	<Header />
+
+	<main class = "snap-y snap-proximity relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
+		<div class = "snap-start">
+			<Inicio/>
+		</div>
+		<div class = "snap-start">
+			<Servicios/>
+		</div>
+		<div>
+			<Horario/>
+		</div>
+		<div class = "snap-start">
+			<Servicios/>
+		</div>
+	</main>
+
+	<!-- <Footer/> -->
+</Layout>

@@ -1,0 +1,32 @@
+---
+import Header from '../components/Header.astro';
+interface Props 
+{
+	title: string;
+	description: string;
+}
+
+const { description, title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class = " font-['Mulish',sans-serif]">
+	<head>
+		<meta charset = "UTF-8" />
+		<meta name = "description" content = {description} />
+		<meta name = "viewport" content = "width=device-width" />
+		<link rel="icon" type = "image/svg+xml" href = "" /> <!-- Poner Logo -->
+		<title>{title}</title>
+		<!-- Fuente -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+
+</style>
