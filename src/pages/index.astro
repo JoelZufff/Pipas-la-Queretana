@@ -11,19 +11,19 @@ import Contacto from '../components/Contacto.astro';
 	title = "Pipas la Queretana"
 	description = "Pipas de la mejor calidad para tu hogar solo en Queretaro"
 >
-	<Header />
+	<Header/>
 
 	<main class = "snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
-		<div class = "snap-start">
+		<div class = "snap-start snap-always">
 			<Inicio/>
 		</div>
-		<div class = "snap-center">
+		<div class = "snap-start snap-always">
 			<Servicios/>
 		</div>
-		<div class = "snap-center">
+		<div class = "snap-center snap-always">
 			<Horario/>
 		</div>
-		<div class = "snap-center">
+		<div class = "snap-start snap-always">
 			<Contacto/>
 		</div>
 	</main>
