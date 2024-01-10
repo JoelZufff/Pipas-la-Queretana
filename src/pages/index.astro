@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Inicio from '../components/Inicio.astro';
 import Servicios from '../components/Servicios.astro';
 import Horario from '../components/Horario.astro';
+import Contacto from '../components/Contacto.astro';
 ---
 
 <Layout 
@@ -12,20 +13,18 @@ import Horario from '../components/Horario.astro';
 >
 	<Header />
 
-	<main class = "snap-y snap-proximity relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
+	<main class = "snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
 		<div class = "snap-start">
 			<Inicio/>
 		</div>
-		<div class = "snap-start">
+		<div class = "snap-center">
 			<Servicios/>
 		</div>
-		<div>
+		<div class = "snap-center">
 			<Horario/>
 		</div>
-		<div class = "snap-start">
-			<Servicios/>
+		<div class = "snap-center">
+			<Contacto/>
 		</div>
 	</main>
-
-	<!-- <Footer/> -->
 </Layout>

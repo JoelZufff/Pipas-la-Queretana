@@ -1,27 +1,44 @@
-<header class = "flex items-center fixed w-full py-2 top-0 text-white z-[2] backdrop-blur-md ">
+<header class = "flex items-center fixed w-full h-[8vh] py-2 top-0 text-white z-[2] backdrop-blur-md ">
+    <!-- Logo -->
     <div class = "flex flex-grow justify-center basis-0">
-        <img 
-            class = "h-14"
-            src="Logo.webp" 
+        <img
+            class = "h-10"
+            src = "Logo.webp" 
             alt = "Logo"
         />
     </div>
 
     <!-- Menus de navegacion -->
     <nav>
-        <ul class="flex gap-x-20 [&>il>a]:inline-block [&>il>a]:w-32 [&>il>a]:text-lg [&>il>a]:rounded-xl [&>il>a]:p-1 [&>il>a]:text-center [&>il>a]:transition-colors [&>il>a]:duration-500">
-            <il><a href = "#inicio" class="hover:bg-white hover:text-black" >Inicio</a></il>
+        <ul class = "flex gap-x-20 [&>il>a]:inline-block [&>il>a]:w-32 [&>il>a]:text-lg [&>il>a]:rounded-xl [&>il>a]:p-1 [&>il>a]:text-center [&>il>a]:transition-colors [&>il>a]:duration-500">
+            <il><a href = "#inicio" class="hover:bg-white hover:text-black md:" >Inicio</a></il>
             <il><a href = "#servicios" class="hover:bg-white hover:text-black" >Servicios</a></il>
-            <il><a href = "#" class="hover:bg-white hover:text-black" >Horario</a></il>
-            <il><a href = "#" class="hover:bg-white hover:text-black" >Contacto</a></il>
+            <il><a href = "#horario" class="hover:bg-white hover:text-black" >Horario</a></il>
+            <il><a href = "#contacto" class="hover:bg-white hover:text-black" >Contacto</a></il>
         </ul>
     </nav>
-    
+
     <!-- Redes Sociales -->
     <nav class = " flex flex-grow justify-center basis-0">
-        <ul class="flex gap-4">
+        <ul class = "flex gap-4">
             <il><a href="#">Instagram</a></il>
             <il><a href="">Tiktok</a></il>
         </ul>
     </nav>
 </header>
+
+<nav class="fixed z-[2] right-[4vh] bottom-[4vh]">
+    <ul class="flex flex-col gap-[3vh]">
+        <li>
+            <a target = "_blank" href="tel:4426563791" class="inline-flex items-center justify-center h-[6vh] w-[6vh] bg-white rounded-full shadow-md hover:bg-blue-500 hover:text-white transition duration-300">
+                <i class="fas fa-phone text-[3vh]"></i>
+            </a>
+        </li>
+        <li>
+          <a target = "_blank" href="https://wa.me/qr/C63B22LE2DCFP1" class="inline-flex items-center justify-center h-[6vh] w-[6vh] bg-white rounded-full shadow-md hover:bg-[#25D366] hover:text-white transition duration-300">
+            <i class="fab fa-whatsapp text-[4vh]"></i>
+          </a>
+        </li>
+    </ul>
+</nav>
+  
