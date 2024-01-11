@@ -1,15 +1,15 @@
-<header class = "flex items-center fixed w-full py-4 top-0 text-white z-[2] backdrop-blur-md">
+<header class = "grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(2,auto)] items-center justify-center fixed w-full py-2 top-0 text-white z-[2] backdrop-blur-md">
     <!-- Logo -->
-    <div class = "flex flex-grow justify-center basis-0">
+    <div class = "flex justify-center col-span-1 md:col-span-1">
         <img
             class = "w-20"
             src = "Logo.webp"
             alt = "Logo"
         />
     </div>
-
+    
     <!-- Menus de navegacion -->
-    <nav>
+    <nav class = "md:col-span-1 col-span-3 my-5" id = "nav-menu">
         <ul class = "flex md:flex-row flex-col md:gap-y-0 gap-y-[2vh] items-center [&>il>a]:inline-flex [&>il>a]:md:w-[10vw] [&>il>a]:w-[40vw] [&>il>a]:text-lg [&>il>a]:rounded-xl [&>il>a]:p-[0.5vh] [&>il>a]:mx-[1.5vw] [&>il>a]:justify-center [&>il>a]:transition-colors [&>il>a]:duration-500">
             <il><a href = "#inicio" class="hover:bg-white hover:text-black" >Inicio</a></il>
             <il><a href = "#servicios" class="hover:bg-white hover:text-black" >Servicios</a></il>
@@ -17,9 +17,9 @@
             <il><a href = "#contacto" class="hover:bg-white hover:text-black" >Contacto</a></il>
         </ul>
     </nav>
-
+    
     <!-- Redes Sociales -->
-    <nav class = " flex flex-grow justify-center basis-0">
+    <nav class = " md:row-start-auto md:col-start-auto row-start-1 col-start-2 flex justify-center">
         <ul class="flex gap-[1.5vw]">
             <li>
                 <a target = "_blank" href="" class="inline-flex items-center justify-center h-[5vh] w-[5vh] rounded-full transition duration-300 hover:bg-[#1877f2] hover:scale-110">
@@ -38,6 +38,11 @@
             </li>
         </ul>
     </nav>
+
+    <button id="toggle-button" class="md:hidden row-start-1 col-start-3">
+        Mostrar/Ocultar Menú
+    </button>
+
 </header>
 
 <nav class="fixed z-[2] right-[4vh] bottom-[4vh]">
@@ -54,4 +59,3 @@
         </li>
     </ul>
 </nav>
-  

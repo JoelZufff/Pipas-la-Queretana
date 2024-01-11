@@ -31,3 +31,28 @@ const { description, title } = Astro.props;
 <style is:global>
 	
 </style>
+
+<script>
+    // Asegúrate de que estos elementos existan en tu HTML y tengan los IDs correspondientes
+	const toggleButton: HTMLElement | null = document.getElementById('toggle-button');
+	const navmenu: HTMLElement | null = document.getElementById('nav-menu');
+
+	if (toggleButton && navmenu) 
+	{
+		toggleButton.addEventListener('click', function () {
+			if (navmenu.style.display === 'none' || navmenu.style.display === '') {
+				navmenu.style.display = 'block';
+			} else {
+				navmenu.style.display = 'none';
+			}
+		});
+
+		window.addEventListener('resize', function () {
+			if (window.innerWidth > 768) {
+				navmenu.style.display = 'block';
+			} else {
+				navmenu.style.display = 'none';
+			}
+		});
+	}
+</script>
