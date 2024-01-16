@@ -1,5 +1,4 @@
-<header class = "grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(2,auto)] items-center fixed w-full top-0 text-white py-[2vh] backdrop-blur-md z-[2]">
-    
+<header class = "grid grid-cols-[repeat(3,1fr)] grid-rows-[repeat(2,auto)] items-center fixed w-full top-0 text-white py-[2vh] bg-black backdrop-blur-md bg-opacity-30 z-[2]">
     <!-- Logo -->
     <div class = "flex justify-center col-span-1">
         <img
@@ -11,11 +10,12 @@
     
     <!-- Menu de navegacion -->
     <nav class = "md:block hidden col-span-1 mx-[2vw]">
-        <ul class = "flex flex-row h-full items-center justify-evenly gap-[2vw] [&>il>a]:inline-flex [&>il>a]:w-[13vw] [&>il>a]:py-[1vh] [&>il>a]:text-xl [&>il>a]:rounded-xl [&>il>a]:justify-center [&>il>a]:transition-colors [&>il>a]:duration-500">
-            <il><a href = "#inicio" class="hover:bg-white hover:text-black" >Inicio</a></il>
-            <il><a href = "#servicios" class="hover:bg-white hover:text-black" >Servicios</a></il>
-            <il><a href = "#horario" class="hover:bg-white hover:text-black" >Horario</a></il>
-            <il><a href = "#contacto" class="hover:bg-white hover:text-black" >Contacto</a></il>
+        <ul class = "flex flex-row h-full items-center justify-evenly gap-[2vw] 
+        [&>li>a]:inline-flex [&>li>a]:bg-white [&>li>a]:bg-opacity-10 [&>li>a]:w-[13vw] [&>li>a]:py-[1vh] [&>li>a]:text-xl [&>li>a]:rounded-xl [&>li>a]:justify-center [&>li>a]:transition-colors [&>li>a]:duration-500">
+            <li><a href = "#inicio" class="hover:bg-white hover:text-black" >Inicio</a></li>
+            <li><a href = "#servicios" class="hover:bg-white hover:text-black" >Servicios</a></li>
+            <li><a href = "#horario" class="hover:bg-white hover:text-black" >Horario</a></li>
+            <li><a href = "#contacto" class="hover:bg-white hover:text-black" >Contacto</a></li>
         </ul>
     </nav>
 
@@ -24,19 +24,20 @@
 
     <!-- Redes Sociales -->
     <nav class = "row-start-1 md:col-start-3 col-start-2 flex justify-center mx-[1.5vw]">
-        <ul class="flex gap-[1.5vw]">
+        <ul class="flex gap-[1.5vw] 
+        [&>li>a]:inline-flex [&>li>a]:items-center [&>li>a]:justify-center [&>li>a]:h-[5vh] [&>li>a]:w-[5vh] [&>li>a]:rounded-full [&>li>a]:transition [&>li>a]:duration-300">
             <li>
-                <a target = "_blank" href="https://www.facebook.com/" class="inline-flex items-center justify-center h-[5vh] w-[5vh] rounded-full transition duration-300 hover:bg-[#1877f2] hover:scale-110">
+                <a target = "_blank" href="https://www.facebook.com/" class="hover:bg-[#1877f2] hover:scale-110">
                     <i class="fab fa-facebook text-[3vh]"></i>
                 </a>
             </li>
             <li>
-                <a target = "_blank" href="https://www.instagram.com/" class="inline-flex items-center justify-center h-[5vh] w-[5vh] rounded-full transition duration-300 hover:bg-gradient-to-r from-[#833ab4] to-[#fd1d1d] hover:scale-110">
+                <a target = "_blank" href="https://www.instagram.com/" class="hover:bg-gradient-to-r from-[#833ab4] to-[#fd1d1d] hover:scale-110">
                     <i class="fab fa-instagram text-[3vh]"></i>
                 </a>
             </li>
             <li>
-                <a target = "_blank" href="https://www.tiktok.com/" class="inline-flex items-center justify-center h-[5vh] w-[5vh] rounded-full transition duration-300 hover:bg-black hover:scale-110">
+                <a target = "_blank" href="https://www.tiktok.com/" class="hover:bg-black hover:scale-110">
                     <i class="fab fa-tiktok text-[3vh]"></i>
                 </a>
             </li>
@@ -46,8 +47,9 @@
 </header>
 
 <!-- Menu de navegacion celular-->
-<nav class = "fixed target:opacity-100 opacity-0 target:top-0 top-[-100vh] flex flex-col h-screen w-screen inset-0 bg-black bg-opacity-80 transition-opacity z-[3]" id = "navbar">
-    <ul class = "flex flex-col h-full items-center justify-center text-white gap-[5vh] [&>il>a]:inline-flex [&>il>a]:w-screen [&>il>a]:py-[3vh] [&>il>a]:text-4xl [&>il>a]:rounded-xl [&>il>a]:justify-center [&>il>a]:transition-colors [&>il>a]:duration-500">
+<nav class = "fixed target:opacity-100 opacity-0 target:bottom-[0] bottom-[100vh] flex flex-col h-screen w-screen bg-black bg-opacity-80 transition-opacity duration-500 z-[3]" id = "navbar">
+    <ul class = "flex flex-col h-full items-center justify-center text-white gap-[5vh] 
+    [&>il>a]:inline-flex [&>il>a]:w-screen [&>il>a]:py-[3vh] [&>il>a]:text-4xl [&>il>a]:rounded-xl [&>il>a]:justify-center">
         <il><a href = "#inicio">Inicio</a></il>
         <il><a href = "#servicios">Servicios</a></il>
         <il><a href = "#horario">Horario</a></il>
@@ -56,15 +58,16 @@
 </nav>
 
 <!-- Botones de comunicacion -->
-<nav class="fixed right-[4vh] bottom-[4vh] z-[2]">
-    <ul class="flex flex-col gap-[3vh]">
+<nav class="fixed right-[4vh] bottom-[4vh] z-[2] text-white">
+    <ul class="flex flex-col gap-[3vh] [&>li>a]:inline-flex 
+        [&>li>a]:items-center [&>li>a]:justify-center [&>li>a]:h-[6vh] [&>li>a]:w-[6vh] [&>li>a]:bg-[#FF1964] [&>li>a]:rounded-full [&>li>a]:shadow-md [&>li>a]:transition [&>li>a]:duration-300">
         <li>
-            <a target = "_blank" href="tel:4426563791" class="inline-flex items-center justify-center h-[6vh] w-[6vh] bg-white rounded-full shadow-md transition duration-300 hover:bg-blue-500 hover:text-white hover:scale-110">
+            <a target = "_blank" href="tel:4426563791" class="hover:bg-blue-500 hover:scale-110">
                 <i class="fas fa-phone text-[3vh]"></i>
             </a>
         </li>
         <li>
-          <a target = "_blank" href="https://wa.me/qr/C63B22LE2DCFP1" class="inline-flex items-center justify-center h-[6vh] w-[6vh] bg-white rounded-full shadow-md transition duration-300 hover:bg-[#25D366] hover:text-white hover:scale-110">
+          <a target = "_blank" href="https://wa.me/qr/C63B22LE2DCFP1" class="hover:bg-[#25D366] hover:scale-110">
             <i class="fab fa-whatsapp text-[4vh]"></i>
           </a>
         </li>

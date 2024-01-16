@@ -13,18 +13,10 @@ import Contacto from '../components/Contacto.astro';
 >
 	<Header/>
 
-	<main class = "snap-y snap-proximity relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
-		<div class = "md:snap-center md:snap-always">
-			<Inicio/>
-		</div>
-		<div class = "md:snap-center md:snap-always">
-			<Servicios/>
-		</div>
-		<div class = "snap-center snap-always">
-			<Horario/>
-		</div>
-		<div class = "md:snap-center md:snap-always">
-			<Contacto/>
-		</div>
+	<main class = "snap-y relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
+		<Inicio/>
+		<Servicios/>
+		<Horario/>
+		<Contacto/>
 	</main>
 </Layout>
