@@ -1,4 +1,4 @@
-<section class = "bg-slate-900 h-screen w-screen text-center relative overflow-hidden text-white" id = "contacto">
+<section class = "bg-slate-900 h-screen w-screen relative overflow-hidden text-white" id = "contacto">
     
     <div class="absolute bg-white h-full w-full bg-opacity-85 z-[1]">
     </div>
@@ -6,40 +6,68 @@
     <!-- Background -->
     <div class = "absolute inset-0 h-full w-full z-[0]">
         <img 
-            src="BG_contacto.jpg"
+            src="BG_contacto.webp"
             class = "object-top object-cover h-full w-full"
             alt = "Fondo Lele"
         />
     </div>
 
     <!-- Contenido -->
-    <article class="absolute inset-0 h-full w-full xl:p-[5vw] p-[5vh] pt-[10vh] flex flex-col z-[1]">
+    <article class="absolute inset-0 h-full w-full pt-[5vh] flex flex-col justify-evenly items-center z-[1]">
         <header>
-            <h1 class="text-[#0097B2] text-6xl">Estas a solo un click de recibir</h1>
-            <h2 class="text-[#FF1964] text-4xl">"El servicio que mereces"</h2>
+            <h1 class="flex text-[#FF1964] text-[clamp(1.5rem,5vw,5rem)]">Estas a solo un click de recibir</h1>
+            <h2 class="flex justify-center text-[#0097B2] text-[clamp(1rem,4vw,2.5rem)]">"El servicio que mereces"</h2>
         </header>
-        <nav class=" flex-grow">
-            <ul class="flex flex-col gap-20
-            [&>li>a]:inline-flex [&>li>a]:items-center [&>li>a]:justify-center [&>li>a]:h-[8vh] [&>li>a]:w-[8vh] [&>li>a]:bg-[#FF1964] [&>li>a]:rounded-full [&>li>a]:shadow-md [&>li>a]:transition [&>li>a]:duration-300">
+        <nav class="w-[70%]">
+            <ul class="flex flex-col gap-20 [&>li]:flex [&>li]:justify-center [&>li]:items-center [&>li]:gap-[25%]">
                 <li>
-                    <a target = "_blank" href="tel:4426563791" class="hover:bg-blue-500 hover:scale-110">
-                        <i class="fas fa-phone text-[4vh]"></i>
+                    <a target = "_blank" href="tel:4426563791" class="hover:bg-blue-500 hover:scale-110 inline-flex items-center justify-center h-[10vh] w-[10vh] bg-[#FF1964] rounded-full shadow-md transition duration-300">
+                        <i class="fas fa-phone text-[5vh]"></i>
                     </a>
+                    <a target = "_blank" href="tel:4421463736" class=" flex-grow text-[#0097B2] text-[clamp(1.5rem,4.5vw,3rem)]">
+                        442 146 3736
+                    <a/>
                 </li>
                 <li>
-                  <a target = "_blank" href="https://wa.me/qr/C63B22LE2DCFP1" class="hover:bg-[#25D366] hover:scale-110">
-                    <i class="fab fa-whatsapp text-[5vh]"></i>
+                  <a target = "_blank" href="https://wa.me/+524421463736" class="hover:bg-[#25D366] hover:scale-110 inline-flex items-center justify-center h-[10vh] w-[10vh] bg-[#FF1964] rounded-full shadow-md transition duration-300">
+                        <i class="fab fa-whatsapp text-[6vh]"></i>
+                  </a>
+                  <a target = "_blank" href="https://wa.me/+524421463736" class="flex-grow text-[#0097B2] text-[clamp(1.5rem,4.5vw,3rem)]">
+                      Whatsapp
                   </a>
                 </li>
                 <li>
-                    <a target = "_blank" href="https://wa.me/qr/C63B22LE2DCFP1" class="hover:bg-blue-500 hover:scale-110">
-                      <i class="fas fa-envelope text-[5vh]"></i>
+                    <a target = "_blank" href="" class="hover:bg-blue-500 hover:scale-110 inline-flex items-center justify-center h-[10vh] w-[10vh] bg-[#FF1964] rounded-full shadow-md transition duration-300">
+                      <i class="fas fa-envelope text-[6vh]"></i>
                     </a>
-                  </li>
+                    <a target = "_blank" href="" class="flex-grow text-[#0097B2] text-[clamp(1.5rem,4.5vw,3rem)]">
+                        laqueretana@pipas.com
+                    </a>
+                </li>
             </ul>
         </nav>
-        <footer>
-
+        <footer class="text-[#0097B2] text-[clamp(1rem,3.5vw,2rem)]">
+            <h1 class="text-[#FF1964]">Aceptamos las siguientes formas de pago</h1>
+            <ul class="flex justify-evenly [&>li]:flex [&>li]:flex-col [&>li]:justify-center [&>li]:items-center">
+                <li>
+                    <i class="fa-solid fa-money-bill"></i>
+                    <p>
+                        Efectivo
+                    </p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-credit-card"></i>
+                    <p>
+                        Tarjeta
+                    </p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-rotate"></i>
+                    <p>
+                        Transferencia
+                    </p>
+                </li>
+            </ul>
         </footer>
     </article>
     
