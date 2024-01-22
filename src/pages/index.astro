@@ -5,6 +5,7 @@ import Inicio from '../components/Inicio.astro';
 import Servicios from '../components/Servicios.astro';
 import Horario from '../components/Horario.astro';
 import Contacto from '../components/Contacto.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout 
@@ -13,18 +14,19 @@ import Contacto from '../components/Contacto.astro';
 >
 	<Header/>
 
-	<main class = "snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
-		<div class = "snap-start snap-always">
+	<main class = "snap-y relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
+		<div>
 			<Inicio/>
 		</div>
-		<div class = "snap-start snap-always">
+		<div>
 			<Servicios/>
 		</div>
-		<div class = "snap-start snap-always">
+		<div>
 			<Horario/>
 		</div>
-		<div class = "snap-start snap-always">
+		<div>
 			<Contacto/>
 		</div>
+		<Footer/>
 	</main>
 </Layout>
