@@ -10,23 +10,15 @@ import Footer from '../components/Footer.astro';
 
 <Layout 
 	title = "Pipas la Queretana"
-	description = "Pipas de la mejor calidad para tu hogar solo en Queretaro"
+	description = "El agua más limpia y pura del estado hasta la puerta de tu casa"
 >
 	<Header/>
 
-	<main class = "snap-y relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
-		<div>
-			<Inicio/>
-		</div>
-		<div>
-			<Servicios/>
-		</div>
-		<div>
-			<Horario/>
-		</div>
-		<div>
-			<Contacto/>
-		</div>
+	<main class = "relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
+		<Inicio/>
+		<Servicios/>
+		<Horario/>
+		<Contacto/>
 		<Footer/>
 	</main>
 </Layout>
