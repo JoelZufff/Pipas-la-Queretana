@@ -12,17 +12,25 @@ const { description, title } = Astro.props;
 <!doctype html>
 <html lang="es" class = " font-['Domine',sans-serif]">
 	<head>
-		<meta charset = "UTF-8" />
-		<meta name = "description" content = {description} />
-		<meta name = "viewport" content = "width=device-width" />
-		<link rel="icon" type = "image/svg+xml" href = "LogoCompacto.webp" /> <!-- Poner Logo -->
+		<meta charset = "UTF-8"/>
+		<link rel="icon" type = "image/x-icon" href = "favicon.ico"/>
 		<title>{title}</title>
+		<meta name = "description" content = {description}/>
 		
+		<meta name = "viewport" content = "width=device-width"/>
+		<meta name = "audience" content = "all"/>
+		<meta name = "language" content = "spanish"/>
+		<meta name = "robots" content="index, all, follow">
+		<meta name = "theme-color" content="#0097B2">                             <!-- Color de Pestaña -->
+		<meta itemprop = "telephone" content = "4421463736">
+		
+		
+		<!-- Open Graph -->
+		<meta property = "og:title" content = {title}>
+		<meta property = "og:image" content = "FotoPipafrontal.webp">
+		<meta property = "og:description" content= {description}>
+
 		<!-- Fuente -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400&display=swap" rel="stylesheet">
-		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
